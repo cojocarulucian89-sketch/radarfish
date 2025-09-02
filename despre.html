@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Despre produs - SONARFISH</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Despre Noi - Luna Dulce</title>
   <style>
-    .product-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-      margin-bottom: 30px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff4f7, #ffd1e0);
+      color: #6b3e46;
+      max-width: 900px;
+      margin: 60px auto 40px;
+      padding: 20px 30px;
+      line-height: 1.65;
     }
-    .product-section img {
-      max-width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    header, footer {
+      background-color: #f9bec7;
+      color: #9b4056;
+      box-shadow: 0 4px 12px rgba(249, 190, 199, 0.8);
+      text-align: center;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: 700;
+      font-size: 1.1rem;
+      user-select: none;
     }
-    .product-info {
-      flex: 1 1 300px;
+    nav a {
+      color: #8a2a4b;
+      text-decoration: none;
+      margin: 0 16px;
+    }
+    nav a:hover {
+      color: #f68caf;
+      text-shadow: 0 0 8px #f68cafbb;
+    }
+    h1 {
+      font-family: 'Cursive', cursive;
+      font-size: 3rem;
+      color: #d35471;
+      margin-bottom: 28px;
+      text-align: center;
+      text-shadow: 1px 1px 5px #f0aeb5;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 22px;
+      box-shadow: 0 8px 30px #d3547188;
+      margin: 0 auto 32px;
+      display: block;
+    }
+    p {
+      font-size: 1.23rem;
+      color: #6b3e46;
+      margin-bottom: 26px;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #d35471;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-decoration: none;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Despre Sonarul SONARFISH</h1>
-  </header>
+<header>
   <nav>
-    <a href="index.html">Acasă</a>
-    <a href="despre.html">Despre produs</a>
-    <a href="testimonial.html">Testimoniale</a>
-    <a href="video.html">Videouri</a>
+    <a href="index.html">Acasă</a> |
+    <a href="despre.html">Despre Noi</a> |
+    <a href="produse.html">Produse</a> |
     <a href="contact.html">Contact</a>
   </nav>
-
-  <div class="container">
-    <div class="product-section">
-      <img src="logo_sonarfish.png" alt="Logo SONARFISH" />
-      <div class="product-info">
-        <p>Sonarul <strong>SONARFISH</strong> este soluția perfectă pentru pescarii care vor să pescuiască inteligent și eficient. Te ajută să localizezi rapid bancurile de pești și transformă pescuitul într-o activitate modernă și distractivă.</p>
-      </div>
-    </div>
-
-    <div class="product-section">
-      <img src="sonar_product_photo.jpg" alt="Sonar SONARFISH" />
-      <div class="product-info">
-        <h2>Funcționalități principale</h2>
-        <ul>
-          <li>Determinarea adâncimii apei și a reliefului lacului</li>
-          <li>Identificarea bancurilor de pești în timp real</li>
-          <li>Interfață intuitivă și ușor de folosit</li>
-          <li>Compatibil cu orice baltă sportivă</li>
-        </ul>
-      </div>
-    </div>
-
-    <h2>Tarife și abonamente</h2>
-    <p>Tarife orientative:</p>
-    <ul>
-      <li>100 lei/oră</li>
-      <li>350 lei/zi</li>
-      <li>Abonament lunar: 3 ieșiri + 1 gratuită</li>
-    </ul>
-  </div>
-
-  <footer>
-    SONARFISH &copy; 2025
-  </footer>
+</header>
+<main>
+  <h1>Despre Luna Dulce</h1>
+  <img src="cofetarie_interior.jpg" alt="Interior Luna Dulce Cofetărie" />
+  <p>Suntem o cofetărie artizanală, dedicată să aducem bucurie și savoare prin fiecare prăjitură pe care o creăm. Folosim doar ingrediente naturale, atent selecționate și respectăm rețete tradiționale reinterpretate cu dragoste și creativitate.</p>
+  <p>Ne dorim să fim locul tău preferat pentru momentele dulci, unde fiecare gust este o experiență și fiecare vizită, o amintire de neuitat.</p>
+  <p>Vino să ne cunoști și să descoperi gama noastră variată de delicii proaspete, create cu pasiune și zâmbetul pe buze.</p>
+  <a href="index.html" class="back-link" aria-label="Înapoi la pagina principală">← Înapoi la pagina principală</a>
+</main>
+<footer>
+  &copy; 2025 Luna Dulce. Toate drepturile rezervate.
+</footer>
 </body>
 </html>

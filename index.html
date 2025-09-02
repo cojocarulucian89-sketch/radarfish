@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luna Dulce - Cofetărie Artizanală</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff4f7, #ffd1e0);
+      color: #6b3e46;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #f9bec7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 4px 12px rgba(249, 190, 199, 0.8);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      cursor: pointer;
+    }
+    .logo-container img {
+      height: 60px;
+      border-radius: 14px;
+      box-shadow: 0 4px 9px #f791a9aa;
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 2rem;
+      color: #9b4056;
+      user-select: none;
+      font-family: 'Cursive', cursive;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #8a2a4b;
+    }
+    nav a {
+      color: #8a2a4b;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #f68caf;
+      color: #5a1f35;
+      outline: none;
+      box-shadow: 0 0 14px #f68cafaa;
+    }
+    main {
+      margin: 110px auto 60px;
+      max-width: 1100px;
+      padding: 0 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      min-height: 75vh;
+    }
+    .intro {
+      font-weight: 600;
+      color: #814254;
+    }
+    .intro h2 {
+      font-size: 3rem;
+      margin-bottom: 22px;
+      color: #d35471;
+      font-family: 'Cursive', cursive;
+      text-shadow: 1.8px 1.8px 5px #f0aeb5;
+    }
+    .intro p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      color: #6b3e46;
+      text-shadow: 0 0 5px #f3bcc1aa;
+    }
+    .btn-primary {
+      background-color: #d35471;
+      color: #fff4f6;
+      border: none;
+      padding: 18px 46px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: 40px;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(211, 84, 113, 0.85);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      max-width: max-content;
+      user-select: none;
+    }
+    .btn-primary:hover {
+      background-color: #e66986;
+      transform: scale(1.08);
+    }
+    .product-img {
+      max-width: 100%;
+      border-radius: 28px;
+      box-shadow: 0 14px 48px rgba(211, 84, 113, 0.55);
+      transition: transform 0.5s ease;
+      filter: drop-shadow(0 0 16px #d3547100cc);
+      cursor: pointer;
+      user-select: none;
+    }
+    .product-img:hover {
+      transform: scale(1.11);
+      filter: drop-shadow(0 0 25px #e66986dd);
+    }
+    footer {
+      background-color: #f9bec7;
+      color: #9b4056;
+      text-align: center;
+      padding: 28px 12px;
+      font-size: 1.05rem;
+      box-shadow: 0 -5px 22px rgba(249, 190, 199, 0.9);
+      user-select: none;
+    }
+    @media(max-width: 900px){
+      main {
+        grid-template-columns: 1fr;
+        margin: 95px auto 50px;
+        padding: 0 22px;
+        gap: 38px;
+      }
+      .intro h2 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-container" role="banner" aria-label="Logo Luna Dulce">
+    <img src="luna_dulce_logo.png" alt="Luna Dulce Logo" />
+    <h1>Luna Dulce</h1>
+  </div>
+  <nav role="navigation" aria-label="Navigare site">
+    <ul>
+      <li><a href="index.html" tabindex="0">Acasă</a></li>
+      <li><a href="despre.html" tabindex="0">Despre Noi</a></li>
+      <li><a href="produse.html" tabindex="0">Produse</a></li>
+      <li><a href="contact.html" tabindex="0">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="intro" role="main">
+    <h2>Bucuria fiecărei gustări începe aici</h2>
+    <p>La Luna Dulce, punem pasiune în fiecare prăjitură făcută manual, folosind doar ingrediente naturale și rețete speciale. Descoperă colecția noastră delicioasă și lasă-te purtat de aromele autentice!</p>
+    <button class="btn-primary" onclick="window.location.href='produse.html';" aria-label="Vezi Produsele Noastre">Vezi Produsele Noastre</button>
+  </div>
+  <div>
+    <img src="luna_dulce_product.jpg" alt="Prăjituri Luna Dulce" class="product-img" />
+  </div>
+</main>
+<footer role="contentinfo">
+  &copy; 2025 Luna Dulce. Toate drepturile rezervate.
+</footer>
+</body>
+</html>
